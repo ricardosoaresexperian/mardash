@@ -30,7 +30,7 @@ jobs:
       - name: Export Marimo notebooks
         run: |
           mkdir -p output_dir
-          uv run marimo export html-wasm dashboard.py -o output_dir/index.html --mode run
+          uv run marimo export html-wasm dashboard.py -o output_dir/dash.html --mode run
 
       # 6. Add .nojekyll to prevent GitHub Pages from ignoring files/folders starting with "_"
       - name: Add .nojekyll
