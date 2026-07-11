@@ -3,7 +3,6 @@ import marimo
 __generated_with = "0.23.13"
 app = marimo.App(width="full")
 
-
 @app.cell
 def _():
     import altair as alt
@@ -40,14 +39,6 @@ def _(chart, mo):
     interactive_chart = mo.ui.altair_chart(chart)
     interactive_chart
     return
-
-
-app._unparsable_cell(
-    r"""
-    mo.ui.
-    """,
-    name="_"
-)
 
 
 if __name__ == "__main__":
